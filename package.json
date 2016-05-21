@@ -1,0 +1,12 @@
+{
+  "name": "nocho",
+  "version": "1.0.0",
+  "description": "NodeJS Implementation of Amazon's Alexa (Echo) Dot",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Richard Ive",
+  "license": "Apache"
+}
