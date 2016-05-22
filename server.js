@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const auth = require('./lib/login');
 const alexa = require('./lib/alexa');
-const record = require('node-record-lpcm16');
 const fs = require('fs');
 const conf = require('./conf/conf');
 
