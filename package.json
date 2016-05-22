@@ -8,5 +8,12 @@
     "start": "node server.js"
   },
   "author": "Richard Ive",
-  "license": "Apache"
+  "license": "Apache",
+  "dependencies": {
+    "http-message-parser": "0.0.23",
+    "http2": "^3.3.4",
+    "moment": "^2.13.0",
+    "node-record-lpcm16": "^0.1.4",
+    "stream-to-buffer": "^0.1.0"
+  }
 }
