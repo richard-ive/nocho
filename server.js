@@ -17,21 +17,19 @@ app.get('/login', (req, res) => {
   
 });
 
-var TOKEN = "";
 app.get('/authresponse', (req, res) => {
 
   auth.login(req.query.code);
   auth.on('success', (auth) => {
-    TOKEN = auth.access_token;
-    res.end('<a href="/listen">listen</a> Welcome! ' + auth.access_token);
+    alexa.ping(auth.access_token);
+    res.end('<a href="/listen">listen</a>');
   });
 
 });
 
 app.get('/listen', (req, res) => {
 
-  alexa.listen(TOKEN);
-
+  alexa.listen(auth.access_token);
   alexa.on('done', () => {
     res.end('<a href="/listen">Listen Again</a>');
   });
